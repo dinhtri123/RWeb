@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <section class="hero">
+    <div class="container">
+      <div class="swiper hero-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <div class="hero-left">
+                  <span class="hero-img">
+                    <img src="./images/img.png" alt="">
+                  </span>
+                  <div class="hero-left-text">
+                    <a href="#">BNB (BNB)</a>
+                    <p class="up">$45762</p>
+                  </div>
+              </div>
+              <div class="hero-right up">
+                5.25%
+              </div>
+          </div>
+          <div class="swiper-slide">
+              <div class="hero-left">
+                  <span class="hero-img">
+                    <img src="./images/img2.png" alt="">
+                  </span>
+                  <div class="hero-left-text">
+                    <a href="#">Cardano (ADA)</a>
+                    <p class="down">$45762</p>
+                  </div>
+              </div>
+              <div class="hero-right down">
+                5.25%
+              </div>
+          </div>
+          <div class="swiper-slide">
+              <div class="hero-left">
+                  <span class="hero-img">
+                    <img src="./images/img.png" alt="">
+                  </span>
+                  <div class="hero-left-text">
+                    <a href="#">BNB (BNB)</a>
+                    <p class="up">$45762</p>
+                  </div>
+              </div>
+              <div class="hero-right up">
+                5.25%
+              </div>
+          </div>
+          <div class="swiper-slide">
+              <div class="hero-left">
+                  <span class="hero-img">
+                    <img src="./images/img.png" alt="">
+                  </span>
+                  <div class="hero-left-text">
+                    <a href="#">BNB (BNB)</a>
+                    <p class="up">$45762</p>
+                  </div>
+              </div>
+              <div class="hero-right up">
+                5.25%
+              </div>
+          </div>
+          <div class="swiper-slide">
+              <div class="hero-left">
+                  <span class="hero-img">
+                    <img src="./images/img.png" alt="">
+                  </span>
+                  <div class="hero-left-text">
+                    <a href="#">BNB (BNB)</a>
+                    <p class="up">$45762</p>
+                  </div>
+              </div>
+              <div class="hero-right up">
+                5.25%
+              </div>
+          </div>
+          <div class="swiper-slide">
+              <div class="hero-left">
+                  <span class="hero-img">
+                    <img src="./images/img2.png" alt="">
+                  </span>
+                  <div class="hero-left-text">
+                    <a href="#">Cardano (ADA)</a>
+                    <p class="down">$45762</p>
+                  </div>
+              </div>
+              <div class="hero-right down">
+                5.25%
+              </div>
+          </div>
+          <div class="swiper-slide">
+              <div class="hero-left">
+                  <span class="hero-img">
+                    <img src="./images/img.png" alt="">
+                  </span>
+                  <div class="hero-left-text">
+                    <a href="#">BNB (BNB)</a>
+                    <p class="up">$45762</p>
+                  </div>
+              </div>
+              <div class="hero-right up">
+                5.25%
+              </div>
+          </div>
+          <div class="swiper-slide">
+              <div class="hero-left">
+                  <span class="hero-img">
+                    <img src="./images/img.png" alt="">
+                  </span>
+                  <div class="hero-left-text">
+                    <a href="#">BNB (BNB)</a>
+                    <p class="up">$45762</p>
+                  </div>
+              </div>
+              <div class="hero-right up">
+                5.25%
+              </div>
+          </div>
+        </div>
+        <div class="btn-slider swiper-button-next">
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div class="btn-slider swiper-button-prev">
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".hero-swiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      centeredSlides: true,
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+      },
+    });
+    
+  </script>
+</body>
+</html>
