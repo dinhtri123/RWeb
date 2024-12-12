@@ -1,0 +1,794 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.container {
+  max-width: 1230px;
+  padding: 0px 15px;
+  margin: 0px auto;
+}
+/* index3.html */
+.index3 {
+  background: #f6f4f8;
+  min-height: 100vh;
+  padding: 20px;
+}
+.index3 .container {
+  max-width: 690px;
+  margin: 0px auto;
+}
+input,
+textarea {
+  margin-bottom: 25px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  letter-spacing: 0.01375em;
+  background: white;
+  border: 1px solid #d7dfe8;
+  border-radius: 5px;
+}
+
+.exchange-calculator--fields-section__image {
+  position: absolute;
+  width: 36px;
+  height: 29px;
+  top: -3px;
+  right: 0;
+}
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.rate-mode-selector {
+  position: relative;
+}
+.exchange-stepper--panel {
+  padding: 35px 70px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.set-transaction-step--content {
+  width: 100%;
+}
+.exchange-stepper--attention-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.043196px;
+  margin-bottom: 22px;
+  margin-top: 0;
+  color: #a4a3aa;
+}
+.rate-mode-selector {
+  position: relative;
+}
+.exchange-calculator--fields-section__tabs {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 0.4px;
+}
+.exchange-calculator--fields-section {
+  position: relative;
+  display: flex;
+}
+.exchange-calculator__light
+  .exchange-calculator--fields-section__tabs
+  button:first-child {
+  border-radius: 4px 0 0 4px;
+}
+.exchange-calculator__light .exchange-calculator--fields-section__tabs button {
+  border-right: none;
+  flex-grow: 1;
+  width: 30%;
+}
+.exchange-calculator__light .exchange-calculator--tab {
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.3px;
+  background: #fff;
+  border: 1px solid #dce2ea;
+  outline: none;
+  cursor: pointer;
+  transition: opacity 100ms;
+}
+.exchange-calculator--tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 5px;
+  font-size: 13px;
+}
+.exchange-calculator__light .exchange-calculator--fields-section__amount,
+.exchange-calculator__light .exchange-calculator--fields-section__estimation {
+  border: 1px solid #dce2ea;
+  border-radius: 5px;
+}
+.exchange-calculator--fields-section {
+  position: relative;
+  display: flex;
+}
+.exchange-calculator__light .exchange-calculator--amount-field,
+.exchange-calculator__light .exchange-calculator--estimation-field {
+  border-right: 1px solid #dce2ea;
+}
+.exchange-calculator--amount-field,
+.exchange-calculator--estimation-field {
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  flex-direction: row;
+}
+.now-input__light {
+  background-color: #fff;
+  position: relative;
+}
+.now-input {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+}
+.now-input__light .now-input--labels {
+  top: 5px;
+  left: 20px;
+}
+.now-input__light .now-input--labels {
+  top: 5px;
+  left: 20px;
+}
+.now-input--labels {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+.now-input__light .now-input--label {
+  font-size: 14px;
+  color: #808086;
+}
+.now-input__light .now-input--input {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 17px 20px 0;
+  font-size: 24px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+.exchange-calculator--currency-field {
+  position: relative;
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.combobox__light {
+  background-color: #fff;
+}
+.combobox {
+  width: fit-content;
+  min-width: 121px;
+}
+.combobox--field {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 100%;
+  outline: none;
+}
+.exchange-calculator--selected-currency-item {
+  align-items: center;
+  font-size: 22px;
+  user-select: none;
+  padding-inline-start: 10px;
+}
+.currency-item {
+  display: flex;
+}
+.exchange-calculator--selected-currency-item .currency-item--currency-icon {
+  display: block;
+  font-size: 16px;
+  color: #00c26f;
+  margin-top: 2px;
+  margin-bottom: 0;
+  margin-inline-end: 6px;
+  margin-inline-start: 2px;
+  width: 19px;
+  height: 19px;
+}
+.currency-item__light .currency-item--currency-icon {
+  color: #00c26f;
+}
+.currency-item--currency-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-inline-end: 10px;
+}
+.exchange-calculator--selected-currency-item .currency-item--ticker {
+  margin-inline-end: 0;
+  font-size: 20px;
+  white-space: nowrap;
+  max-width: 8ch;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.currency-item__light .currency-item--ticker {
+  color: #000;
+}
+.currency-item--ticker {
+  display: inline-block;
+  margin-inline-end: 10px;
+  word-break: break-all;
+}
+.combobox__light .combobox--dropdown-arrow {
+  fill: #000;
+}
+.combobox--dropdown-arrow {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  padding: 5px 12px 0;
+  font-size: 5px;
+  line-height: 48px;
+  cursor: pointer;
+}
+.exchange-calculator--fields-section__sequence {
+  justify-content: space-between;
+  align-items: center;
+  position: initial;
+}
+
+.exchange-calculator--fields-section {
+  position: relative;
+  display: flex;
+}
+.new-stepper-hints {
+  padding-inline-start: 16px;
+}
+.new-stepper-hints__wrapper-border {
+  display: flex;
+  flex-direction: column;
+  border-inline-start: 1px solid #dce2ea;
+  padding: 10px 0;
+}
+.new-stepper-hints__item {
+  position: relative;
+  font-size: 12px;
+  color: #808086;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-inline-start: 16px;
+  padding-inline-end: 0;
+  display: flex;
+}
+.new-stepper-hints__item:before {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 7px;
+  left: -4px;
+  top: 9px;
+  border-radius: 50%;
+  background: #dce2ea;
+}
+.new-stepper-hints__label {
+  border: none;
+  padding: 0;
+  outline: none;
+  background: none;
+  border-bottom: 1px dashed #00b67a;
+}
+.fiat-buttons-swap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column-reverse;
+  gap: 2px;
+  border: 1px solid #dce2ea;
+  background-color: #ffffff;
+  border-radius: 9px;
+  padding: 2px;
+}
+.fiat-buttons-swap__button {
+  font-size: 12px;
+  line-height: 13px;
+  font-weight: 400;
+  color: #808086;
+  background: transparent;
+  border-radius: 7px;
+  transition: background, color, ease 0.1s;
+  box-shadow: none;
+}
+.exchange-calculator__light .exchange-calculator--tab:hover {
+  color: #000;
+}
+.exchange-calculator__light .exchange-calculator--tab__active {
+  color: #35354c;
+  background: #f7f7f9;
+  opacity: 1;
+}
+.new-stepper-button-swap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 5px;
+  background: #fff;
+  padding: 0;
+}
+.fiat-buttons-swap__button svg {
+  width: 5px;
+  height: 10px;
+  transition: fill ease 0.1s;
+}
+.fiat-buttons-swap__arrow-sell {
+  margin-inline-start: 3px;
+}
+.fiat-buttons-swap__button_active {
+  color: #00c26f;
+  background: #f7f7f9;
+  pointer-events: none;
+}
+.fiat-buttons-swap button {
+  width: 100%;
+  height: 21px;
+  padding: 0 8px;
+}
+.new-stepper-recipient-field {
+  margin-top: 24px;
+}
+.new-stepper-field__header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.new-stepper-field__label {
+  font-size: 16px;
+  line-height: 20px;
+  color: #808086;
+  transition: color ease 0.3s;
+}
+.new-stepper-field__label-right {
+  font-size: 14px;
+  line-height: 17px;
+  color: #808086;
+  margin-inline-start: auto;
+  cursor: pointer;
+  outline: none;
+}
+.new-stepper-field__wrapper-input {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+  border: 1px solid #dce2ea;
+  border-radius: 6px;
+  transition: border ease 0.3s;
+}
+.new-stepper-field__wrapper-input_with-icon .new-stepper-field__input {
+  padding-inline-end: 50px;
+}
+.new-stepper-field__input {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #2b2b36;
+  background-color: transparent;
+  border: none;
+  padding: 20px 16px 6px;
+  margin: 0;
+}
+.new-stepper-field__wrapper-input_with-icon .new-stepper-field__placeholder {
+  right: 40px;
+}
+.new-stepper-field__placeholder {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #808086;
+  font-weight: 300;
+  letter-spacing: 0.01375em;
+  padding-inline-start: 16px;
+  transform: translate(0, 13px) scale(1);
+  transform-origin: top left;
+  transition: transform ease 0.3s;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  pointer-events: none;
+}
+.new-stepper-field__icon {
+  width: 40px;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  cursor: pointer;
+  outline: none;
+}
+.new-stepper-field__icon svg {
+  display: block;
+  flex-shrink: 0;
+}
+.new-stepper-extensions {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.exchange-stepper__extensions {
+  margin-top: 8px;
+  padding-inline-start: 6px;
+}
+.new-stepper-extensions__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #a4a3aa;
+}
+.new-stepper-extensions__item:first-child {
+  margin-left: 0;
+}
+.extension-item {
+  position: relative;
+  width: 28px;
+  height: 28px;
+}
+.extension-item__image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 6px rgba(43, 43, 54, 0.15);
+  border-radius: 6px;
+  cursor: pointer;
+}
+.extension-item .extension-item__tooltip {
+  position: absolute;
+  bottom: 30px;
+  left: -84px;
+  z-index: 1;
+  width: 196px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.0736842px;
+  color: #2b2b36;
+  padding: 6px 4px 8px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity, top, ease 0.3s;
+}
+.simple-tooltip {
+  width: 100%;
+  position: relative;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 17px;
+  color: #2b2b36;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(43, 43, 54, 0.2);
+  padding: 12px;
+  margin: auto;
+}
+.simple-tooltip:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: rotate(-45deg);
+}
+.extension-item__tooltip:before {
+  width: 8px;
+  height: 8px;
+  border-bottom-left-radius: 2px;
+}
+.simple-tooltip__content {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 400;
+  color: inherit;
+  letter-spacing: 0.07px;
+  padding-top: 3px;
+  text-wrap: initial;
+}
+.exchange-stepper--payment-offers {
+  margin-top: 24px;
+}
+.jss31:first-child {
+  margin-top: 0;
+}
+.jss31 {
+  margin-top: 12px;
+}
+.jss37:first-child {
+  margin-left: 0;
+}
+.svg-sprite--guardarian {
+  background: url("./images/fd12a7b969b56a56586d.png") no-repeat;
+  background-position: 61.53846153846154% 59.682539682539684%;
+  width: 28px;
+  height: 28px;
+}
+.jss34 {
+  cursor: pointer;
+  display: grid;
+  padding: 12px 18px;
+  transition: box-shadow 0.3s, border-color 0.3s, opacity 0.3s;
+  align-items: center;
+  border-color: #dce2ea;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 6px;
+  grid-template-rows: repeat(auto-fit, 24px);
+  grid-template-areas:
+    "icon provider amount checkbox"
+    "payments payments payments payments";
+  grid-template-columns: 1fr 1fr 20fr 1fr;
+}
+.jss43 {
+  grid-area: icon;
+}
+.jss37:nth-child(2) {
+  margin-left: 8px;
+}
+.jss44 {
+  grid-area: provider;
+}
+.jss35 {
+  color: #2b2b36;
+  font-size: 16px;
+  font-weight: 500;
+}
+.jss45 {
+  grid-area: amount;
+}
+.jss38 {
+  margin-left: auto;
+}
+.jss42 {
+  text-align: right;
+}
+.jss36 {
+  font-size: 14px;
+}
+.jss39 {
+  display: flex;
+  justify-content: flex-end;
+}
+.jss46 {
+  grid-area: payments;
+}
+.payment-systems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.payment-systems_small img {
+  width: 28px;
+  height: 16px;
+}
+.jss47 {
+  grid-area: checkbox;
+}
+.jss37 {
+  margin-left: 12px;
+}
+.jss41 {
+  display: block;
+}
+.svg-sprite--checked {
+  background: url("./images/fd12a7b969b56a56586d.png") no-repeat;
+  background-position: 99.46236559139786% 66.87306501547988%;
+  width: 20px;
+  height: 20px;
+}
+.jss31 {
+  margin-top: 12px;
+}
+.jss56 {
+  opacity: 1;
+}
+.svg-sprite--simplex {
+  background: url("./images/fd12a7b969b56a56586d.png") no-repeat;
+  background-position: 69.23076923076923% 59.682539682539684%;
+  width: 28px;
+  height: 28px;
+}
+.jss40 {
+  width: 16px;
+  border: 1px solid #dce2ea;
+  height: 16px;
+  margin: 2px;
+  display: block;
+  border-radius: 50%;
+}
+.confirmation-agreements {
+  margin-top: 24px;
+}
+.confirm-transaction-step--agreements label {
+  display: flex;
+  flex-direction: row;
+}
+.confirm-transaction-step--agreements label > div {
+  width: 30px !important;
+}
+.confirm-transaction-step--agreements label > span {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 140%;
+  color: #a4a3aa;
+  margin-top: 4px;
+  align-self: center;
+}
+.confirm-transaction-step--agreements label > span a {
+  text-decoration: underline;
+  color: #00c26f;
+  white-space: nowrap;
+}
+.set-transaction-step .now-button {
+  width: 100%;
+  height: 50px;
+}
+.now-button__green:hover {
+  background: #00a55f;
+}
+.exchange-stepper--next-button {
+  margin-top: 35px;
+}
+.now-button__green {
+  color: #fff;
+  background-color: #00c26f;
+  border: none;
+}
+.now-button {
+  font-size: 18px;
+  border-radius: 5px;
+  outline: none;
+}
+.fiat-buttons-swap__button_active svg {
+    fill: #00C26F;
+}
+.fiat-buttons-swap__arrow-buy {
+    transform: rotate(180deg);
+    margin-inline-start: 3px;
+}
+@media screen and (min-width: 1200px) {
+  .exchange-stepper--panel {
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fiat-buttons-swap__button svg {
+        width: 8px;
+        height: 12px;
+    }
+  .new-stepper-extensions__items {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .new-stepper-field__placeholder,
+  .new-stepper-field__input {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  .fiat-buttons-swap button {
+    width: 100%;
+    height: 28px;
+  }
+  .fiat-buttons-swap__button svg {
+    width: 8px;
+    height: 12px;
+  }
+  .fiat-buttons-swap__button {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+  .fiat-buttons-swap {
+    flex-direction: row;
+  }
+  .new-stepper-hints__rate {
+    margin-inline-end: 12px;
+  }
+  .new-stepper-hints__item:before {
+    top: 11px;
+  }
+  .exchange-calculator--tab {
+    padding: 8px 7px;
+  }
+  .exchange-calculator--fields-section__amount,
+  .exchange-calculator--fields-section__estimation {
+    min-height: 70px;
+  }
+  .exchange-calculator--amount-field,
+  .exchange-calculator--estimation-field {
+    font-size: 20px;
+  }
+  .combobox {
+    min-width: 160px;
+  }
+  .combobox {
+    min-width: 160px;
+  }
+  .exchange-calculator .combobox--field {
+    width: 160px;
+  }
+  .exchange-calculator--selected-currency-item .currency-item--currency-icon {
+    margin-inline-end: 12px;
+    margin-top: 0;
+    width: 21px;
+    height: 21px;
+  }
+  .new-stepper-hints__item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-inline-start: 16px;
+    padding-inline-end: 0;
+  }
+}
+@media (min-width: 576px) {
+  .payment-systems_small {
+    margin-top: 0;
+    justify-self: flex-end;
+  }
+  .jss34 {
+    grid-template-areas:
+      "icon provider amount checkbox"
+      "icon provider payments checkbox";
+  }
+  .confirm-transaction-step--agreements {
+    max-width: 440px;
+  }
+}
