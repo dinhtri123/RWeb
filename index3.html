@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="index3">
+    <div class="container">
+      <div class="set-transaction-step exchange-stepper--step exchange-stepper--panel">
+        <div class="set-transaction-step--content">
+          <h1 class="exchange-stepper--attention-title">Please fill in transaction details</h1>
+          <div class="exchange-calculator exchange-calculator__light">
+            <div class="rate-mode-selector">
+              <div class="exchange-calculator--fields-section exchange-calculator--fields-section__tabs"><button type="button"
+                  class="exchange-calculator--tab">Exchange Crypto</button><button type="button"
+                  class="exchange-calculator--tab exchange-calculator--tab__active">Buy / Sell Crypto 💳</button><button
+                  type="button" class="exchange-calculator--tab">Exchange Pro</button></div><img
+                src="/images/exchange-calc-pro-label.svg" class="exchange-calculator--fields-section__image" decoding="lazy"
+                loading="async" alt="pro exchange">
+            </div>
+            <div class="exchange-calculator--fields-section exchange-calculator--fields-section__amount">
+              <div class="now-input now-input__light exchange-calculator--amount-field">
+                <div class="now-input--labels"><label class="now-input--label" for="amount-field">You Pay</label></div><input
+                  id="amount-field" class="now-input--input" placeholder="" value="1500" autocomplete="off"
+                  inputmode="decimal">
+              </div>
+              <div class="combobox combobox__light exchange-calculator--currency-field combobox__green-scrollbar">
+                <div class="combobox--field" role="button" tabindex="0">
+                  <div class="currency-item currency-item__light exchange-calculator--selected-currency-item">
+                    <div class="currency-item__left"><img class="currency-icon currency-item--currency-icon"
+                        src="https://content-api.changenow.io/uploads/usd_90681e5a82.svg" alt="icon-usd" loading="lazy"
+                        decoding="async"></div>
+                    <div class="currency-item__right"><span class="currency-item--ticker">USD</span></div>
+                  </div>
+                  <div class="combobox--dropdown-arrow"><svg width="12" height="6" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M.343 0h11.314L6 5.657" fill-rule="evenodd"></path>
+                    </svg></div>
+                </div>
+              </div>
+            </div>
+            <div class="exchange-calculator--fields-section exchange-calculator--fields-section__sequence">
+              <div class="new-stepper-hints">
+                <div class="new-stepper-hints__wrapper-border">
+                  <div class="new-stepper-hints__item"><button type="button" class="new-stepper-hints__label">No hidden
+                      fees</button></div>
+                  <div class="new-stepper-hints__item"><button type="button" class="new-stepper-hints__label">Estimated
+                      rate:</button> <span class="new-stepper-hints__rate">1 BTC ~ 101873.8 USD</span></div>
+                </div>
+              </div>
+              <div class="fiat-buttons-swap"><button class="new-stepper-button-swap fiat-buttons-swap__button"
+                  type="button">Sell<svg width="8" height="13" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg"
+                    fill="#808086" class="fiat-buttons-swap__arrow-sell">
+                    <path
+                      d="M3.73358 12.7001C4.07748 13.1013 4.69817 13.1013 5.04208 12.7001L7.79082 9.4933C8.26994 8.93435 7.87278 8.07082 7.13658 8.07082L5.92858 8.07082L5.92859 1.22888C5.92859 0.752981 5.54279 0.367188 5.06689 0.367188L3.70882 0.367188C3.23292 0.367187 2.84713 0.75298 2.84713 1.22888L2.84713 8.07082H1.63924C0.903052 8.07082 0.505887 8.93433 0.984984 9.49329L3.73358 12.7001Z">
+                    </path>
+                  </svg></button><button
+                  class="new-stepper-button-swap fiat-buttons-swap__button fiat-buttons-swap__button_active"
+                  type="button">Buy<svg width="8" height="13" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg"
+                    fill="#808086" class="fiat-buttons-swap__arrow-buy">
+                    <path
+                      d="M3.73358 12.7001C4.07748 13.1013 4.69817 13.1013 5.04208 12.7001L7.79082 9.4933C8.26994 8.93435 7.87278 8.07082 7.13658 8.07082L5.92858 8.07082L5.92859 1.22888C5.92859 0.752981 5.54279 0.367188 5.06689 0.367188L3.70882 0.367188C3.23292 0.367187 2.84713 0.75298 2.84713 1.22888L2.84713 8.07082H1.63924C0.903052 8.07082 0.505887 8.93433 0.984984 9.49329L3.73358 12.7001Z">
+                    </path>
+                  </svg></button></div>
+            </div>
+            <div class="exchange-calculator--fields-section exchange-calculator--fields-section__estimation">
+              <div class="now-input now-input__light exchange-calculator--estimation-field">
+                <div class="now-input--labels"><label class="now-input--label" for="estimation-field">You Get</label></div>
+                <input id="estimation-field" class="now-input--input" placeholder="" value="0.0147241" readonly=""
+                  autocomplete="off" inputmode="decimal">
+              </div>
+              <div class="combobox combobox__light exchange-calculator--currency-field combobox__green-scrollbar">
+                <div class="combobox--field" role="button" tabindex="0">
+                  <div class="currency-item currency-item__light exchange-calculator--selected-currency-item">
+                    <div class="currency-item__left"><img class="currency-icon currency-item--currency-icon"
+                        src="https://content-api.changenow.io/uploads/btc_1_527dc9ec3c.svg" alt="icon-btc" loading="lazy"
+                        decoding="async"></div>
+                    <div class="currency-item__right"><span class="currency-item--ticker">BTC</span></div>
+                  </div>
+                  <div class="combobox--dropdown-arrow"><svg width="12" height="6" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M.343 0h11.314L6 5.657" fill-rule="evenodd"></path>
+                    </svg></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="new-stepper-recipient-field exchange-stepper--input">
+            <div class="new-stepper-field-qr-code">
+              <div class="new-stepper-field">
+                <div class="new-stepper-field__header"><label for="recipientWallet" class="new-stepper-field__label">Recipient
+                    Wallet</label>
+                  <div class="new-stepper-field__label-right" role="button" tabindex="0">Don’t have a wallet yet?</div>
+                </div>
+                <div class="new-stepper-field__wrapper-input new-stepper-field__wrapper-input_with-icon"><input type="text"
+                    id="recipientWallet" class="new-stepper-field__input" placeholder="Enter the BTC payout address" value=""
+                    spellcheck="false">
+                    <!-- <span class="new-stepper-field__placeholder">Enter the BTC payout address</span> -->
+                  <div class="new-stepper-field__icon" role="button" tabindex="0"><svg width="20" height="20"
+                      viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="new-stepper-icon-qr-code">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.25 1.6875C0.25 1.27329 0.585786 0.9375 1 0.9375H4.375C4.78921 0.9375 5.125 1.27329 5.125 1.6875C5.125 2.10171 4.78921 2.4375 4.375 2.4375H1.75V5.0625C1.75 5.47671 1.41421 5.8125 1 5.8125C0.585786 5.8125 0.25 5.47671 0.25 5.0625V1.6875Z"
+                        fill="#00C26F"></path>
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1 15.1208C1.41421 15.1208 1.75 15.4566 1.75 15.8708V18.4958H4.375C4.78921 18.4958 5.125 18.8316 5.125 19.2458C5.125 19.6601 4.78921 19.9958 4.375 19.9958H1C0.585786 19.9958 0.25 19.6601 0.25 19.2458V15.8708C0.25 15.4566 0.585786 15.1208 1 15.1208Z"
+                        fill="#00C26F"></path>
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M10.25 5.6875C10.25 5.27329 10.5858 4.9375 11 4.9375H14C14.4142 4.9375 14.75 5.27329 14.75 5.6875V8.6875C14.75 9.10171 14.4142 9.4375 14 9.4375H11C10.5858 9.4375 10.25 9.10171 10.25 8.6875V5.6875ZM11.75 6.4375V7.9375H13.25V6.4375H11.75Z"
+                        fill="#00C26F"></path>
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M4.25 5.6875C4.25 5.27329 4.58579 4.9375 5 4.9375H8C8.41421 4.9375 8.75 5.27329 8.75 5.6875V8.6875C8.75 9.10171 8.41421 9.4375 8 9.4375H5C4.58579 9.4375 4.25 9.10171 4.25 8.6875V5.6875ZM5.75 6.4375V7.9375H7.25V6.4375H5.75Z"
+                        fill="#00C26F"></path>
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M4.25 11.6875C4.25 11.2733 4.58579 10.9375 5 10.9375H8C8.41421 10.9375 8.75 11.2733 8.75 11.6875V14.6875C8.75 15.1017 8.41421 15.4375 8 15.4375H5C4.58579 15.4375 4.25 15.1017 4.25 14.6875V11.6875ZM5.75 12.4375V13.9375H7.25V12.4375H5.75Z"
+                        fill="#00C26F"></path>
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M10.5403 11.9727C10.5403 11.5584 10.8761 11.2227 11.2903 11.2227H11.6418C12.0561 11.2227 12.3918 11.5584 12.3918 11.9727C12.3918 12.3869 12.0561 12.7227 11.6418 12.7227H11.2903C10.8761 12.7227 10.5403 12.3869 10.5403 11.9727ZM14.7121 11.2227C15.1263 11.2227 15.4621 11.5584 15.4621 11.9727V15.3266C15.4621 15.7409 15.1263 16.0766 14.7121 16.0766H11.3581C10.9439 16.0766 10.6081 15.7409 10.6081 15.3266C10.6081 14.9124 10.9439 14.5766 11.3581 14.5766H13.9621V11.9727C13.9621 11.5584 14.2979 11.2227 14.7121 11.2227Z"
+                        fill="#00C26F"></path>
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M19 15.1208C19.4142 15.1208 19.75 15.4566 19.75 15.8708V19.2458C19.75 19.6601 19.4142 19.9958 19 19.9958H15.625C15.2108 19.9958 14.875 19.6601 14.875 19.2458C14.875 18.8316 15.2108 18.4958 15.625 18.4958H18.25V15.8708C18.25 15.4566 18.5858 15.1208 19 15.1208Z"
+                        fill="#00C26F"></path>
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M14.875 1.6875C14.875 1.27329 15.2108 0.9375 15.625 0.9375H19C19.4142 0.9375 19.75 1.27329 19.75 1.6875V5.0625C19.75 5.47671 19.4142 5.8125 19 5.8125C18.5858 5.8125 18.25 5.47671 18.25 5.0625V2.4375H15.625C15.2108 2.4375 14.875 2.10171 14.875 1.6875Z"
+                        fill="#00C26F"></path>
+                    </svg></div>
+                </div>
+              </div>
+            </div>
+            <div class="new-stepper-extensions exchange-stepper__extensions">
+              <div class="new-stepper-extensions__text">FIO protocol names are supported</div>
+              <div class="new-stepper-extensions__items">
+                <div class="new-stepper-metamask-extension new-stepper-extensions__item">
+                  <div class="extension-item">
+                    <div class="extension-item__image" role="button" tabindex="0"><img
+                        src="/images/metamask-small.svg" alt="Metamask" decoding="async"></div>
+                    <div class="simple-tooltip extension-item__tooltip" style="max-width:196px">
+                      <div class="simple-tooltip__content">Wrong network. Please connect Metamask to the appropriate network.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="MuiBox-root jss32 exchange-stepper--payment-offers">
+            <div class="MuiBox-root jss33 jss30 jss31">Payment offers</div>
+            <div class="MuiBox-root jss49 jss31 jss34 jss48">
+              <div class="MuiBox-root jss50 jss37 jss43">
+                <div class="svg-sprite--guardarian"></div>
+              </div>
+              <div class="MuiBox-root jss51 jss37 jss35 jss44">Guardarian</div>
+              <div class="MuiBox-root jss52 jss37 jss38 jss45">
+                <div class="MuiBox-root jss53 jss35 jss36 jss42">0.0147241 BTC</div>
+                <div class="MuiBox-root jss54 jss39 jss38"></div>
+              </div>
+              <div class="jss46 payment-systems_small payment-systems"><img class="payment-systems--image"
+                  src="/images/visa-black.svg" alt="visa-black" decoding="async" loading="lazy"><img
+                  class="payment-systems--image" src="/images/master-card-white.svg" alt="master-card-white"
+                  decoding="async" loading="lazy"><img class="payment-systems--image"
+                  src="/images/sepa-black.svg" alt="sepa-black" decoding="async" loading="lazy"><img
+                  class="payment-systems--image" src="/images/apple-pay-black.svg" alt="apple-pay-black"
+                  decoding="async" loading="lazy"><img class="payment-systems--image"
+                  src="/images/g-pay-black.svg" alt="g-pay-black" decoding="async" loading="lazy"><img
+                  class="payment-systems--image" src="/images/revolut-black.svg" alt="revolut-black"
+                  decoding="async" loading="lazy"><img class="payment-systems--image"
+                  src="/images/swift-black.svg" alt="swift-black" decoding="async" loading="lazy"><img
+                  class="payment-systems--image" src="/images/fasterpay-black.svg" alt="fasterpay-black"
+                  decoding="async" loading="lazy"></div>
+              <div class="MuiBox-root jss55 jss37 jss47"><span class="svg-sprite--checked jss41"></span></div>
+            </div>
+            <div class="MuiBox-root jss57 jss31 jss34 jss56">
+              <div class="MuiBox-root jss58 jss37 jss43">
+                <div class="svg-sprite--simplex"></div>
+              </div>
+              <div class="MuiBox-root jss59 jss37 jss35 jss44">Simplex</div>
+              <div class="MuiBox-root jss60 jss37 jss38 jss45">
+                <div class="MuiBox-root jss61 jss35 jss36 jss42">0.0146894 BTC</div>
+                <div class="MuiBox-root jss62 jss39 jss38"></div>
+              </div>
+              <div class="jss46 payment-systems_small payment-systems"><img class="payment-systems--image"
+                  src="/images/visa-black.svg" alt="visa-black" decoding="async" loading="lazy"><img
+                  class="payment-systems--image" src="/images/master-card-white.svg" alt="master-card-white"
+                  decoding="async" loading="lazy"><img class="payment-systems--image"
+                  src="/images/sepa-black.svg" alt="sepa-black" decoding="async" loading="lazy"><img
+                  class="payment-systems--image" src="/images/apple-pay-black.svg" alt="apple-pay-black"
+                  decoding="async" loading="lazy"><img class="payment-systems--image"
+                  src="/images/g-pay-black.svg" alt="g-pay-black" decoding="async" loading="lazy"><img
+                  class="payment-systems--image" src="/images/pix-black.svg" alt="pix-black" decoding="async"
+                  loading="lazy"><img class="payment-systems--image" src="/images/ach-black.svg"
+                  alt="ach-black" decoding="async" loading="lazy"></div>
+              <div class="MuiBox-root jss63 jss37 jss47"><span class="jss40"></span></div>
+            </div>
+          </div>
+          <div class="confirmation-agreements">
+            <div class="confirm-transaction-step--agreements"><label>
+                <div style="cursor:pointer;position:relative;overflow:visible;display:table;height:auto;width:100%"><input
+                    type="checkbox"
+                    style="position:absolute;cursor:inherit;pointer-events:all;opacity:0;width:100%;height:100%;z-index:2;left:0;box-sizing:border-box;padding:0;margin:0;-moz-box-sizing:border-box"
+                    name="termsOfUseCheckbox" checked="" value="">
+                  <div style="display:flex;width:100%;height:100%">
+                    <div
+                      style="transition:all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;float:left;position:relative;display:block;flex-shrink:0;width:24px;margin-right:16px;margin-left:0;height:24px;-webkit-transition:all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;-moz-transition:all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;-ms-flex-negative:0;-webkit-flex-shrink:0">
+                      <div><svg
+                          style="display:inline-block;color:rgba(0, 0, 0, 0.87);fill:#00C26F;height:24px;width:24px;user-select:none;transition:opacity 650ms cubic-bezier(0.23, 1, 0.32, 1) 150ms;position:absolute;opacity:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-webkit-transition:opacity 650ms cubic-bezier(0.23, 1, 0.32, 1) 150ms;-moz-transition:opacity 650ms cubic-bezier(0.23, 1, 0.32, 1) 150ms"
+                          viewBox="0 0 24 24">
+                          <path
+                            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z">
+                          </path>
+                        </svg><svg
+                          style="display:inline-block;color:rgba(0, 0, 0, 0.87);fill:#00C26F;height:24px;width:24px;user-select:none;transition:opacity 0ms cubic-bezier(0.23, 1, 0.32, 1) 0ms, -ms-transform 800ms cubic-bezier(0.23, 1, 0.32, 1) 0ms, -webkit-transform 800ms cubic-bezier(0.23, 1, 0.32, 1) 0ms, transform 800ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;position:absolute;opacity:1;transform:scale(1);transition-origin:50% 50%;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-webkit-transition:opacity 0ms cubic-bezier(0.23, 1, 0.32, 1) 0ms, -webkit-transform 800ms cubic-bezier(0.23, 1, 0.32, 1) 0ms, transform 800ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;-moz-transition:opacity 0ms cubic-bezier(0.23, 1, 0.32, 1) 0ms, transform 800ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;-webkit-transform:scale(1);-ms-transform:scale(1)"
+                          viewBox="0 0 24 24">
+                          <path
+                            d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z">
+                          </path>
+                        </svg></div>
+                      <div></div>
+                      <div style="position:absolute;height:100%;width:100%;top:0;left:0"></div>
+                    </div>
+                  </div>
+                </div><span>I've read and agree to the ChangeNOW <a href="/terms-of-use" target="_blank"
+                    rel="noopener noreferrer">Terms of Use</a>, <a href="/privacy-policy" target="_blank"
+                    rel="noopener noreferrer">Privacy Policy</a><span> <!-- -->and<!-- --> </span><a
+                    href="/risk-disclosure-statement" target="_blank" rel="noopener noreferrer">Risk Disclosure
+                    Statement</a></span>
+              </label></div>
+            <div class="confirm-transaction-step--agreements"><label>
+                <div style="cursor:pointer;position:relative;overflow:visible;display:table;height:auto;width:100%"><input
+                    type="checkbox"
+                    style="position:absolute;cursor:inherit;pointer-events:all;opacity:0;width:100%;height:100%;z-index:2;left:0;box-sizing:border-box;padding:0;margin:0;-moz-box-sizing:border-box"
+                    name="thirdPartyAgreementsCheckbox" checked="" value="">
+                  <div style="display:flex;width:100%;height:100%">
+                    <div
+                      style="transition:all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;float:left;position:relative;display:block;flex-shrink:0;width:24px;margin-right:16px;margin-left:0;height:24px;-webkit-transition:all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;-moz-transition:all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;-ms-flex-negative:0;-webkit-flex-shrink:0">
+                      <div><svg
+                          style="display:inline-block;color:rgba(0, 0, 0, 0.87);fill:#00C26F;height:24px;width:24px;user-select:none;transition:opacity 650ms cubic-bezier(0.23, 1, 0.32, 1) 150ms;position:absolute;opacity:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-webkit-transition:opacity 650ms cubic-bezier(0.23, 1, 0.32, 1) 150ms;-moz-transition:opacity 650ms cubic-bezier(0.23, 1, 0.32, 1) 150ms"
+                          viewBox="0 0 24 24">
+                          <path
+                            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z">
+                          </path>
+                        </svg><svg
+                          style="display:inline-block;color:rgba(0, 0, 0, 0.87);fill:#00C26F;height:24px;width:24px;user-select:none;transition:opacity 0ms cubic-bezier(0.23, 1, 0.32, 1) 0ms, -ms-transform 800ms cubic-bezier(0.23, 1, 0.32, 1) 0ms, -webkit-transform 800ms cubic-bezier(0.23, 1, 0.32, 1) 0ms, transform 800ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;position:absolute;opacity:1;transform:scale(1);transition-origin:50% 50%;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-webkit-transition:opacity 0ms cubic-bezier(0.23, 1, 0.32, 1) 0ms, -webkit-transform 800ms cubic-bezier(0.23, 1, 0.32, 1) 0ms, transform 800ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;-moz-transition:opacity 0ms cubic-bezier(0.23, 1, 0.32, 1) 0ms, transform 800ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;-webkit-transform:scale(1);-ms-transform:scale(1)"
+                          viewBox="0 0 24 24">
+                          <path
+                            d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z">
+                          </path>
+                        </svg></div>
+                      <div></div>
+                      <div style="position:absolute;height:100%;width:100%;top:0;left:0"></div>
+                    </div>
+                  </div>
+                </div><span>I'm aware that this exchange is made through a<!-- -->&nbsp;<a href="/faq/third-party-service"
+                    target="_blank" rel="noopener noreferrer">third-party service</a></span>
+              </label></div>
+          </div><button type="button" class="now-button now-button__green exchange-stepper--next-button">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="index.js"></script>
+</body>
+</html>
